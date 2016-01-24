@@ -1,6 +1,6 @@
 'use strict';
 const cmdName = 'echo';
-const description = 'i serve as your echo.';
+const description = 'echoes whatever is sent.';
 
 function execute (cmd) {
   cmd.send(cmd.args.join(' '));

@@ -11,7 +11,7 @@ const parameter = {
   'edit'  : true,
   'delete': false
 }
-const description = 'saves bytes of information to be retrieved later. use ">>[tagname]".'
+const description = 'saves bytes of info. use \'>>[tagname]\'.'
 
 let tags = null;
 

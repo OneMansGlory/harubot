@@ -1,7 +1,7 @@
 'use strict';
 const cmdName = '8ball';
 const description =
-  'i\'ll give you a reply to any question, between the lines of \'yes\' and \'no\'.';
+  'i\'ll reply any question with something between \'yes\' and \'no\'.';
 const aliases = [
   'eightball'
 ]

@@ -8,5 +8,4 @@
   "soundcloud-ID"    : "your soundcloud client ID here",
   "youtube-api"      : "your youtube API key here",
   "telegram-enabled" : false,
-  "tele-bot-token"   : "your telegram bot token here"
 }

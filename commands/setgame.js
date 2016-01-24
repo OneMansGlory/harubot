@@ -3,7 +3,7 @@ const cmdName = 'setgame';
 const parameter = {
   'name/id': true
 };
-const description = 'you request a game and i play it for your sake.';
+const description = 'sets the game i\'m \'playing\' to whatever you want.';
 
 function execute (cmd) {
   if (typeof cmd.parameter === 'undefined') {

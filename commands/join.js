@@ -3,8 +3,7 @@ const cmdName = 'join';
 const parameter = {
   'invite link': true
 };
-const description = 'give me an invitation link and \
-i\'ll be at others\' biddings on another server';
+const description = 'joins a server with an invite link supplied.';
 
 function execute (cmd) {
   if (typeof cmd.parameter === 'undefined')

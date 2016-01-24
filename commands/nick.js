@@ -5,8 +5,7 @@ const cmdName = 'nick';
 const parameter = {
   '@username': false
 };
-const description =
-  'you may have the pleasure of deciding on my username much to my chagrin.';
+const description = 'name change, whee.';
 
 function execute (cmd) {
   const args = cmd.args.join(' ');

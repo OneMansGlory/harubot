@@ -1,7 +1,6 @@
 'use strict';
 const cmdName = 'ping';
-const description =
-  'i reply with pong! my dimwit creators use it to check if i\'m alive.';
+const description = 'pong!';
 
 function execute (cmd) {
   cmd.reply('**pong!**');

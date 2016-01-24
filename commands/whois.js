@@ -3,7 +3,7 @@ const cmdName = 'whois';
 const parameter = {
   '@username': true
 };
-const description = 'sources for a user\'s avatar so you can steal it.';
+const description = 'sources for a user\'s avatar URL.';
 
 function execute (cmd) {
   if (typeof cmd.parameter === 'undefined')

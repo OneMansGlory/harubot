@@ -11,7 +11,7 @@ const parameter = {
   'play': false,
   'list': false
 };
-const description = 'now people get to hear your shit taste from soundcloud';
+const description = 'i stream music from soundcloud (and audio streams)';
 
 function fetchChannelByName (msg, name) {
   for (let channel of msg.channel.server.channels) {
@@ -69,7 +69,7 @@ function execute (cmd) {
         if (err) {
           console.log(err);
           cmd.reply(
-            'i can\'t join the specified channel due to an error!'
+            'i can\'t join the specified channel due to an error.'
           )
           return;
         } else {
@@ -145,7 +145,7 @@ function execute (cmd) {
 
     case 'play':
       if (typeof args[1] === 'undefined') {
-        cmd.reply('hey, i need a link to a sound file!');
+        cmd.reply('i need a link to a sound file!');
         break;
       }
 

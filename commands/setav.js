@@ -5,7 +5,7 @@ const cmdName = 'setav';
 const parameter = {
   'link': true
 };
-const description = 'changes my avatar and changes my identity \\:D';
+const description = 'changes my avatar.';
 
 function execute (cmd) {
   let args = cmd.args;
@@ -27,7 +27,6 @@ function execute (cmd) {
       });
     }
   });
-  cmd.reply('changed my avatar. do i look better now?');
   console.log(`${cmd.sender} changed the bot's avatar.`);
 }
 

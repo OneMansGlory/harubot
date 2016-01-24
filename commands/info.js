@@ -1,7 +1,6 @@
 'use strict';
 const cmdName = 'info';
-const description = 'this is a sitrep of my status. ' +
-  'nothing is to be gained from this knowledge.';
+const description = 'returns my information';
 
 function execute (cmd) {
   const main = require('../harubot.js');

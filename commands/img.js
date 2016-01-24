@@ -5,7 +5,7 @@ const cmdName = 'img';
 const parameter = {
   'site': true
 };
-const description = 'to satiate your pervert desires';
+const description = 'searches for images from questionable imageboards.';
 
 function execute (cmd) {
   let args = cmd.args;

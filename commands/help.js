@@ -44,7 +44,7 @@ function execute (cmd) {
     return cmd.reply('no command exists by that name.');
   else {
     if (!(cmd.msg.channel instanceof Discord.PMChannel))
-      cmd.reply('check your DMs in a bit.');
+      cmd.reply('check your DMs for the list of commands.');
     return cmd.pm(reply);
   }
 }

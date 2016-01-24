@@ -8,7 +8,7 @@ const cmdName = 'mimic';
 const parameter = {
   '@username': true
 };
-const description = 'ditto!';
+const description = 'ditto! turns me into one of you.';
 
 function execute (cmd) {
   if (typeof cmd.parameter === 'undefined') {
@@ -56,7 +56,7 @@ function execute (cmd) {
     });
   }
 
-  return cmd.reply(`mimicking ${user.username}!`);
+  return cmd.reply(`mimicking ${user.username}`);
 }
 
 module.exports = {

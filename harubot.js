@@ -32,15 +32,7 @@ const configs = (function reloadConfigs () {
   }
 })()
 
-// SANDBOX //
 const discord = new DiscordClient(configs.get('email'), configs.get('password')).init();
-/**
-if (configs.get('telegram-enabled')) {
-  const telegram = require('./tele.js').init();
-  const middleware = require('./lib/Telegram/middleware.js');
-  middleware.handle(discord, telegram);
-}
-**/
 
 module.exports = {
   version, restart, configs,

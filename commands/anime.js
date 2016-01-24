@@ -5,16 +5,21 @@ const cmdName = 'anime';
 const parameter = {
   'search': true
 };
-const description = 'fetches your favourite chinese cartoons, bleurgh';
+const description = 'searches for an anime title';
 
 function execute (cmd) {
   if (typeof cmd.parameter === 'undefined')
     return cmd.reply(
-      `please run **${cmd.prefix}help anime** to run the command properly.`
+      `please run **${cmd.prefix}help ${cmdName}** to learn how to use the command properly.`
     );
 
   switch (cmd.parameter) {
     case 'search':
+      if (cmd.args.length === 1) {
+        return cmd.reply(
+          `please enter a search term. e.g. ${cmd.prefix}${cmdName} search Nagi no Asukara`
+        );
+      }
       var query = cmd.args.slice(1);
       query = Array.prototype.join.call(query, '_');
       request

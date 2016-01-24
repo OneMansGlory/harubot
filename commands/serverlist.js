@@ -1,6 +1,6 @@
 'use strict';
 const cmdName = 'serverlist';
-const description = 'some sitrep of all the servers i\'m connected to.';
+const description = 'i list down all the servers i\'m connected to.';
 
 function execute (cmd) {
   var info = [];

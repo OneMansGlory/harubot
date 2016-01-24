@@ -3,7 +3,7 @@ const cmdName = 'av';
 const parameter = {
   '@username': false
 };
-const description = 'sources for a user\'s avatar';
+const description = 'fetches the URL for user\'s avatar';
 
 function execute (cmd) {
   if (cmd.users.list.length == 0)
@@ -16,7 +16,7 @@ function execute (cmd) {
     user = cmd.users.list[user];
     if (user.avatarURL === null)
       cmd.reply(
-        `**${user.username}** doesn't have an avatar, you won't find anything.`
+        `**${user.username}** doesn't have an avatar.`
       );
     else cmd.reply(`**${user.username}**'s avatar URL is ${user.avatarURL}`);
   }

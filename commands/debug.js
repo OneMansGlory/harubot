@@ -3,7 +3,7 @@ const cmdName = 'debug';
 const parameter = {
   'eval': true
 }
-const description = 'config tinkering. not for the faint-hearted.';
+const description = 'evaluating code. use at your own risk.';
 
 function execute (cmd) {
   let args = cmd.args;
