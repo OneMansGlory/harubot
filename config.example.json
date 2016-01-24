@@ -1,0 +1,12 @@
+{
+  "email"            : "your email address here",
+  "password"         : "your password here",
+  "prefix"           : "$",
+  "name"             : "robot",
+  "master"           : "your user ID",
+  "perms-enabled"    : true,
+  "soundcloud-ID"    : "your soundcloud client ID here",
+  "youtube-api"      : "your youtube API key here",
+  "telegram-enabled" : false,
+  "tele-bot-token"   : "your telegram bot token here"
+}
