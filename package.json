@@ -1,6 +1,6 @@
 {
   "name": "harubot",
-  "version": "1.1.2",
+  "version": "0.1.0",
   "description": "Discord command bot based on discord.js",
   "main": "harubot.js",
   "dependencies": {

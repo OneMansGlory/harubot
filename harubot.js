@@ -1,6 +1,6 @@
 'use strict';
 const DiscordClient = require('./lib/DiscordClient');
-const version = '1.1.3';
+const version = '0.1.0';
 
 // Reloads the bot by creating a child process, then terminating itself
 function restart () {

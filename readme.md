@@ -1,11 +1,11 @@
 ## harubot
-[![Version](https://img.shields.io/badge/Version-1.1.3-green.svg?style=flat-square)](https://github.com/Pyraxo/harubot/releases)
+[![Version](https://img.shields.io/badge/Version-0.1.0-green.svg?style=flat-square)](https://github.com/Pyraxo/harubot/releases)
 [![Twitter](https://img.shields.io/twitter/follow/Pyraxo.svg?style=social)](http://twitter.com/pyraxo)
 ###### A Discord.js music streaming and command chat bot
 ***
 ### Installation
 ```
-git clone https://github.com/Pyraxo/harubot harubot
+git clone https://github.com/Pyraxo/harubot
 cd harubot
 npm install
 node harubot.js
