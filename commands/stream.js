@@ -13,6 +13,8 @@ const parameter = {
 };
 const description = 'i stream music from soundcloud (and audio streams)';
 
+let boundChannel = false;
+
 function fetchChannelByName (msg, name) {
   for (let channel of msg.channel.server.channels) {
     if (channel instanceof Discord.VoiceChannel &&
@@ -40,7 +42,7 @@ function execute (cmd) {
   }
   let args = cmd.args;
 
-  if (stream_manager.boundChannel && cmd.msg.channel.id !== stream_manager.boundChannel.id) return;
+  if (boundChannel && cmd.msg.channel.id !== boundChannel.id) return;
 
   switch (cmd.parameter) {
     case 'join':
@@ -75,6 +77,7 @@ function execute (cmd) {
         } else {
           stream_manager.destroy();
           stream_manager.stopped();
+          boundChannel = cmd.msg.channel
           cmd.send(
             `Connected to voice channel '**${
               conn.voiceChannel.name
